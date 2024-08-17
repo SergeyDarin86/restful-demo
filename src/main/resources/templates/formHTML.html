@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="\assets\css\styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script>
+     function alerted(){
+                alert("Вы нажали на эту кнопку");
+            }
+
+     function randomSum(min, max){
+        document.querySelector('.sum').innerHTML = (Math.floor(Math.random() * (max - min + 1)) + min);
+     }       
+    </script>
+
+<!--     <script defer src="/assets/js/scripts.js?v=38874865"></script>-->
+
+
+</head>
+<body class="p-3 mb-2 bg-primary-subtle text-emphasis-primary">
+    <form class="reg-form" method="post">
+<!--        <form class="form form_close" action="#" method="post" data-send="indexPage">-->
+
+        <h1>Регистрация на конференцию</h1>
+
+        <div class="mb-3">
+            <label for="name">Фамилия, Имя, Отчество:</label>
+            <input class="form-input reg-form__input form-control" type="text" id="name" name="name">
+        </div>
+
+         <div class="mb-3">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" class="reg-form__input form-control">
+        </div>
+
+        <div class="mb-3">
+            <label>Пол:</label>
+            <div>
+                <label><input class="form-check-input" type="radio" name="sex" value="male"> мужской</label>
+                <label><input class="form-check-input" type="radio" name="sex" value="female"> женский</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label>Предпочтительное время выступления</label>
+            <div>
+                <label><input class="form-check-input" type="checkbox" name="time_morning" value="1">утро</label>
+                <label><input class="form-check-input" type="checkbox" name="time_afternoon" value="1">день</label>
+                <label><input class="form-check-input" type="checkbox" name="time_evening" value="1">вечер</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label>Секция:</label>
+            <select name="section" class="reg-form__input form-select">
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="management">Management</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label>Тема и тезисы выступления</label>
+            <textarea name="info" class="reg-form__input form-control"></textarea>
+        </div>
+
+        <!-- <div class="sum">
+            
+        </div> -->
+
+        <div class="mb-3">
+            <label>Презентация</label>
+            <input type="file" name="presentation" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <input class="btn btn-danger" type="reset" value="Сбросить">
+            <input class="btn btn-primary" type="submit" value="Отправить">
+            <!-- <input class="btn btn-primary" type="submit" id="submit" onclick="alerted();" value="Отправить"> -->
+            <!-- <input class="btn btn-primary" type="submit" id="submit" onclick="randomSum(1000,9999);" value="Отправить"> -->
+        </div>
+
+    </form>
+
+</body>
+</html>
