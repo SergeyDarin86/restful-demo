@@ -9,6 +9,7 @@ public class Main2 {
         String startDateString = "06/27/2007";
         DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
         Date startDate;
+
 //        try {
 //            startDate = df.parse(startDateString);
 //            System.out.println(startDate);
