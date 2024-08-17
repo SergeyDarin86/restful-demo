@@ -1,0 +1,31 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  level:
+    org: { INFO,ERROR,WARN }
+  application:
+    name: DemoRestfull
+  sleuth:
+    sampler:
+      probability: 1.0
+logging:
+  file:
+    # 弄到疑似Promtail的日志读取路径试试
+    path: c:/docker/log
+#    level:
+#      org: { INFO,ERROR,WARN }
+#    application:
+#      name: DemoRestfull
+cron:
+  delayedInfo: "*/20 * * * * *"
+
+#  spring:
+#    application:
+#      name: MyApp
+#  logging:
+#    level:
+#      org:
+#        springframework:
+#          cloud:
+#            sleuth: DEBUG
