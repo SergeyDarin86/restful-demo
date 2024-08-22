@@ -10,6 +10,7 @@ public class Main2 {
         DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
         Date startDate;
 
+        System.out.println("Hello from my Holiday in Agoy");
 //        try {
 //            startDate = df.parse(startDateString);
 //            System.out.println(startDate);
